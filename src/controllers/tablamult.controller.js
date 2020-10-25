@@ -1,9 +1,9 @@
 export const mult = (req, res) => {
 
     try { 
-        var { num } = req.body
+        let { num } = req.body
         num = parseInt(num)
-        var tabla = []
+        let tabla = []
         console.log(num);
         for(let i=1; i<=10; i++){
             tabla.push(num*i)
